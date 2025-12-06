@@ -1,0 +1,6 @@
+.bulletlist-textarea {
+  resize: none;
+  overflow: hidden;
+  height: max-content;
+  padding-bottom: calc(var(--field-font-size) * 1.25);
+}

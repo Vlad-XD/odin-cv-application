@@ -1,0 +1,10 @@
+.description-field {
+  resize: none;
+  overflow: hidden;
+  height: max-content;
+  font-size: var(--field-font-size);
+}
+
+.description-field:focus {
+  outline: none;
+}
