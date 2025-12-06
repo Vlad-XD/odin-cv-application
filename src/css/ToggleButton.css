@@ -1,0 +1,37 @@
+.toggle-button {
+  background: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.toggle-button-icon {
+  color: rgba(0, 0, 0, 0.445);
+  height: auto;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.toggle-button-icon:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+.edit-icon {
+  width: 1.8rem;
+}
+
+.checkmark-icon {
+  width: 1.8rem;
+}
+
+/* Toggle buttons should dissapear when user prints */
+@media print {
+  .toggle-button {
+    display: none;
+  }
+}
