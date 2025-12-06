@@ -1,0 +1,25 @@
+.header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header-section .toggle-button {
+  align-self: flex-end;
+}
+
+.header-section .field {
+  font-size: var(--field-font-size);
+}
+
+.header-section .field.name {
+  font-weight: bold;
+  font-size: var(--name-title-font-size);
+  height: calc(var(--name-title-font-size) * 1.1);
+  display: flex;
+  align-items: center;
+}
+
+.header-section .field:focus {
+  outline: none;
+}
