@@ -1,0 +1,70 @@
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section .section-header-container {
+  display: flex;
+  border-bottom: 2px solid black;
+  padding-bottom: 0.25rem;
+  align-items: last baseline;
+  margin-bottom: 0.4rem;
+}
+
+.section .section-header-container .toggle-button {
+  margin-left: auto;
+}
+
+.section .field {
+  font-size: var(--field-font-size);
+}
+
+.section .field:focus {
+  outline: none;
+}
+
+.section .display-field,
+.section .input-field {
+  height: max-content;
+}
+
+.section .section-title {
+  font-weight: bold;
+  font-size: var(--section-title-font-size);
+}
+
+.section .section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.add-button {
+  align-self: center;
+  background: none;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  margin-top: 0.5rem;
+}
+
+.add-button-icon {
+  color: rgba(0, 0, 0, 0.445);
+  height: auto;
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.add-button-icon:hover {
+  transform: scale(1.1);
+  color: black;
+}
+
+.add-button-icon {
+  width: 1.4rem;
+}
