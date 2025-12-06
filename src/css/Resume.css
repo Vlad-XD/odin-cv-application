@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --main-font-color: black;
+  --main-bg-color: white;
+
+  --main-font-stack: "Inter", sans-serif;
+
+  --name-title-font-size: 2rem;
+  --section-title-font-size: 1.167rem;
+  --item-title-font-size: 1rem;
+  --field-font-size: 0.917rem;
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 4rem 3rem;
+  width: 51rem;
+  font-family: var(--main-font-stack);
+  background-color: var(--main-bg-color);
+  color: var(--main-font-color);
+}
+
+.resume-print-button {
+  align-self: center;
+}
+
+@media (max-width: 900px) {
+  .resume {
+    width: 34rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume {
+    width: 20rem;
+  }
+}
+
+@media print {
+  .resume {
+    width: 51rem;
+  }
+
+  /* button should dissapear when user prints */
+  .resume-button {
+    display: none;
+  }
+}
